@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 22px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/cupcake.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 200px;
+    width: auto;
+    float: left;
+    margin-top: 1px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 80px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #F73F52;
+}
+
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #F73F52;
+    margin-right: 20px;
+    border: 1px solid #FFEA85;
+}
+
+.btn-full:hover{
+    background-color: #FFEA85;
+}
+
+.colorchange{
+    animation: colorchangefood 1s infinite;
+}
+
+.btn-half{
+    background-color: transparent;
+    color: #FFEA85;
+    margin-right: 50px;
+    border: 1px solid #F73F52;
+}
+
+.btn-half:hover{
+    background-color: #F73F52;
+}
+
+
+footer{
+    background-color: #F73F52;
+    color:#fff;
+    font-size:28px;
+}
+
+@keyframes colorchangefood{
+    0%{color: #bf55ec;}
+    25%{color: white;}
+    50%{color: #FFEA85;}
+    100%{color: #F73F52;}
+}
+
+.mobile-icon{display: none;}
+
+/*//////// Responsive queries ////////*/
+
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+    
+    .main-nav{display: none;}
+    
+    .mobile-icon{
+        display: inline-block;
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .main-nav{float: left;}
+    
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+    }
+}

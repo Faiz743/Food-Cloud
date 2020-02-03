@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contact us</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="contact.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+        <script src="contact.js"></script>
+    </head>
+    <body>
+        
+        <header>
+            <nav>
+                <div class="row clearfix">
+                    <img src="images/logo.png" class="logo">
+                    
+                    <ul class="main-nav" id="check-class">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="order.html">MENU</a></li>
+                        <li><a href="signup.html">SIGN UP</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="wrapper">
+            <h2>contact us</h2>
+            <div id="error_message"></div>
+            
+            <form id="myform" onsubmit="return validation()">
+                <div class="input_field">
+                    <input type="text" placeholder="Name" id="name">
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Subject" id="subject">
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Phone" id="phone">
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="input_field">
+                    <textarea id="message" placeholder="Message"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <p align="center">Copyright © Food Cloud. All Rights Reserved | Contact Us: +91 90000 00000</p>
+            </div>
+        </footer>
+        
+    </body>
+</html>

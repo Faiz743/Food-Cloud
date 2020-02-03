@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-size: 22px;
+    overflow-x: hidden;
+    color: orange;
+    font-family: 'Flamenco', cursive;
+}
+
+header{
+    background-image: url('images/candlecake.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 5px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: yellow;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid orange;
+}
+
+.content{
+    position: absolute;
+    background: rgba(44,62,80,0.7);
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.content h2{
+    text-align-last: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fece0c;
+}
+
+.content [type=text]{
+    width: 285px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFEA85;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+
+.content input[type=password]{
+    width: 285px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFEA85;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+.content input[type=submit]{
+    border: none;
+    background: #fece0c;
+    line-height: 2em;
+    border-radius: 8px;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 70px;
+    width: 300px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    text-decoration: none;
+    text-align: center;
+    left: 7%;
+}
+
+.content input[type=submit]:hover
+{
+    color: #FFEA85;
+    background-color: orangered;
+}
+
+h2{
+    color: #FFEA85;
+}
+
+a{
+    color: yellow;
+    text-decoration: blink;
+}
+
+a:hover{
+    color: magenta;
+}
+
+::placeholder{
+    color: aliceblue;
+    opacity: 0.8;
+}
+
+footer{
+    background-color: #FFEA85;
+    color: orangered;
+    font-size:25px;
+}

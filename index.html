@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Food Cloud</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+       
+        <header>
+            <nav>
+                <div class="row clearfix">
+                    <img src="images/logo.png" class="logo">
+                    
+                    <ul class="main-nav" id="check-class">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="signup.html">SIGN UP</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                    <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+                </div>
+            </nav>
+            
+            <div class="main-content-header">
+                <h1> WELCOME TO <span class="colorchange">FOOD CLOUD</span>.<br>
+                HOUSE OF FOOD LOVER. </h1>
+            <a href="order.html" class="btn btn-full"> click to order</a>
+            <a href="about.html" class="btn btn-half"> click to know more</a>
+            </div>
+        </header>
+        
+        <footer>
+            <div class="container">
+                <p align="center">Copyright © Food Cloud. All Rights Reserved | Contact Us: +91 90000 00000</p>
+            </div>
+        </footer>
+        
+        <script type="text/javascript">
+            
+            fuction slideshow(){
+                var x = document.getElementById('check-class');
+                if(x.style.display === "none"){
+                    x.style.display="block";
+                }else{
+                    x.style.display="none";
+                }
+            }
+            </script>
+            
+    </body>
+</html>

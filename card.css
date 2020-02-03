@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+body{
+    height: 100%;
+    margin: 0;
+    font-family: lato;
+    background: whitesmoke;
+}
+
+.dropdown{
+    position: relative;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+ul li:hover{
+    background: rgba(255,255,255,0.1);
+}
+
+.dropdown-select{
+    position: absolute;
+    background: #77aaee;
+    text-align: left;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 90%;
+    left: 2px;
+    line-height: 2em;
+    margin-top: 2px;
+    box-sizing: border-box;
+}
+
+.half-input-table{
+    border-right: 10px solid #4488dd;
+    width: 50%;
+}
+
+.input-field{
+    background: rgba(255,255,255,0.1);
+    margin-bottom: 10px;
+    margin-top: 3px;
+    line-height: 1.5em;
+    font-size: 20px;
+    font-size: 1.3rem;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credit-info{
+    background: #4488dd;
+    height: 80vh;
+    width: 30%;
+    color: #eee;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    right: 35%;
+    bottom: 15%;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.dropdown-btn{
+    background: rgba(255,255,255,0.1);
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 1.5em;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: background .2s ease;
+    transition: background .2s ease;
+}
+
+.dropdown-btn:after{
+    content: '\25BE';
+    right: 8px;
+    position: absolute;
+}
+
+.dropdown-btn:hover{
+    background: rgba(255,255,255,.2);
+    -webkit-transition: background .2s ease;
+    transition: background .2s ease;
+}
+
+.dropdown-select{
+    display: list-item;
+}
+
+.credit-card-image{
+    display: block;
+    max-height: 40px;
+    margin-left: 120px;
+    margin-right: auto;
+    margin-top: 85px;
+    margin-bottom: 15px;
+}
+
+.credit-card-image1{
+    display: block;
+    width: 35%;
+    max-height: 95px;
+    margin-left: 1px;
+    margin-right: auto;
+    margin-top: -83px;
+    margin-bottom: 15px;
+}
+
+.credit-card-image2{
+    display: block;
+    width: 30%;
+    max-height: 85px;
+    margin-left: auto;
+    margin-right: -3px;
+    margin-top: -105px;
+    margin-bottom: 15px;
+}
+
+.credit-info-content{
+    margin-top: 25px;
+    -webkit-flex-flow:column;
+    -ms-flex-flow:column;
+    flex-flow: column;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.pay-btn{
+    border: none;
+    background: #22b877;
+    line-height: 2em;
+    border-radius: 10px;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    width: calc(100% - 50px);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.pay-btn:hover{
+    background: #F73F52;
+    color: #eee;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+@media(max-width: 600px){
+    .credit-info{
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+        border-radius: 0px;
+    }
+    .pay-btn{
+        border-radius: 0px;
+    }
+}

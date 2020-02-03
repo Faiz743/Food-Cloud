@@ -1,0 +1,161 @@
+header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 170px;
+    width: auto;
+    float: left;
+    margin-top: 5px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 75px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: #F73F52;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 110%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #FFEA85;
+}
+
+body{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #F73F52;
+    background: url('images/icecream1.jpg');
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.login{
+    background: rgba(44,62,80,0.7);
+    padding: 40px;
+    width: 240px;
+    margin: auto;
+    margin-top: 1px;
+    height: 320px;
+    margin-left: 180x;
+}
+
+.user{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 170px;
+    left: calc(50% - 50px);
+}
+
+form{
+    width: 240px;
+    text-align: center;
+}
+
+input[type=text]
+{
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #F73F52;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+input[type=password]
+{
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #F73F52;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+.pay-btn{
+    border: none;
+    background: #F73F52;
+    line-height: 2em;
+    border-radius: 4px;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 150px;
+    width: 150px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    text-decoration: none;
+    left: 44.5%;
+}
+
+.pay-btn:hover
+{
+    color: #F73F52;
+    background-color: #FFEA85;
+}
+
+h2{
+    color: #FFEA85;
+}
+
+a{
+    color: yellow;
+    text-decoration: blink;
+}
+
+a:hover{
+    color: skyblue;
+}
+
+::placeholder{
+    color: aliceblue;
+    opacity: 0.8;
+}
+
+footer{
+    background-color: #F73F52;
+    color:#fff;
+    font-size:25px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Credit Card Checkout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="card.css">
+    </head>
+    
+    <body>
+        
+        <div class="credit-info">
+            <div class="credit-info-content">
+                <table class="half-input-table">
+                    <tr><td>Please select your card:<div class="dropdown" id="card-dropdown">
+                    <div class="dropdown-btn" id="current-card">Visa</div>
+                    <div class="dropdown-select">
+                        <ul>
+                            <li>Master Card</li>
+                            <li>American Express</li>
+                        </ul>
+                    </div>
+                            </div>
+                        </td></tr>
+                </table>
+                
+                <img src="images/visa2.png" class="credit-card-image" id="credit-card-image">
+                <img src="images/mastercard.png" class="credit-card-image1" id="credit-card-image1">
+                <img src="images/american.jpg" class="credit-card-image2" id="credit-card-image2">
+                Card Holder
+                <input class="input-field"></input>
+                Card Number
+                <input class="input-field"></input>
+                <table class="half-input-table">
+                    <tr>
+                        <td>Expires
+                            <input class="input-field"></input>
+                        </td>
+                        <td>
+                            CVV
+                            <input class="input-field"></input>
+                        </td>
+                    </tr>
+                </table>
+                <a href="thanks.html" class="pay-btn">Checkout</a>
+            </div>
+        </div>
+        
+    </body>
+</html>

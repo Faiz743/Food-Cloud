@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="signup.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+        
+<script>  
+function validateform(){  
+var name=document.myform.name.value;   
+var email=document.myform.email.value;
+var phone=document.myform.phone.value;
+var gender=document.myform.gender.value;
+var password=document.myform.password.value;
+
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;   
+  }else if(email.indexOf("@") == -1 || email.length <5){
+      alert("Please enter valid email id");
+      return false;
+  }else if(isNaN(phone) || phone.length != 10){
+      alert("Please enter valid phone number");
+      return false;
+  }else if(gender.length<=0){  
+  alert("Gender is required");  
+  return false; 
+  }else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false; 
+}
+}
+</script>
+</head>
+
+<body>
+    
+    <header>
+            <nav>
+                <div class="row clearfix">
+                    <img src="images/logo.png" class="logo">
+                    
+                    <ul class="main-nav" id="check-class">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="order.html">MENU</a></li>
+                        <li><a href="signup.html">SIGN UP</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+  
+    <div class="content">
+        <h2>Sign up</h2>
+<form name="myform" method="post" onsubmit="return validateform()" >  
+<input type="text" placeholder="Name" name="name"><br/>  
+<input type="text" placeholder="Email" name="email"><br>
+<input type="text" placeholder="Phone Number" name="phone"><br>
+Gender: <input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female <br><br>
+<input type="password" placeholder="Password" name="password"><br/>
+<input type="submit" value="Signin" onclick="login.html">
+<br><br><br>
+                Already had an account?<a href="login.html">&nbsp;Log in</a>
+</form>
+    </div>
+    
+    <footer>
+            <div class="container">
+                <p align="center">Copyright © Food Cloud. All Rights Reserved | Contact Us: +91 90000 00000</p>
+            </div>
+    </footer>
+        
+</body>
+</html>
